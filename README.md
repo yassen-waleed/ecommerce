@@ -1,4 +1,3 @@
-# rest-api
 #Assignment 1 web Services 
 
 ** I created this Spring Boot application using a three-tier architecture (Controller, Service , JPA Repository)
