@@ -12,4 +12,6 @@
 
 ** APIs Design And Responses 
 
-https://github.com/yassen-waleed/ecommerce.git/designs
+![](./Designs/apis1.PNG)
+![](./Designs/apis2.PNG)
+![](./Designs/apis3.PNG)
