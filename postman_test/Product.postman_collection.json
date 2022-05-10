@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "1c68699b-66d2-474d-9a92-86761d0ce4a8",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8001/api/product/all"
+			},
+			"response": [
+				{
+					"name": "getAllProducts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/product/all"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:00:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"f5f5\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"name\": \"ana\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 2,\n            \"name\": \"food\"\n        },\n        \"supplier_id\": {\n            \"id\": 1,\n            \"name\": \"ana\",\n            \"email\": \"dsad\",\n            \"phone\": \"sad\",\n            \"address\": \"sad\"\n        }\n    },\n    {\n        \"id\": 6,\n        \"name\": \"sasha\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 1,\n            \"name\": \"ana\",\n            \"email\": \"dsad\",\n            \"phone\": \"sad\",\n            \"address\": \"sad\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetProductById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "GetProductById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/product/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:04:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"yassen\",\n    \"price\": 14.5,\n    \"category_id\": 1,\n    \"supplier_id\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "GetProductsByCategoryId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/product/category/1"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:04:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"f5f5\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 6,\n        \"name\": \"sasha\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 1,\n            \"name\": \"ana\",\n            \"email\": \"dsad\",\n            \"phone\": \"sad\",\n            \"address\": \"sad\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetProductBySupplierId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "GetProductBySupplierId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8001/api/product/supplier/2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:06:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"yassen\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"f5f5\",\n        \"price\": 14.5,\n        \"category_id\": {\n            \"id\": 1,\n            \"name\": \"game\"\n        },\n        \"supplier_id\": {\n            \"id\": 2,\n            \"name\": \"yassen\",\n            \"email\": \"f5f5@gmail.com\",\n            \"phone\": \"0568047023\",\n            \"address\": \"jefna\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "createNewProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "createNewProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"new product\",\r\n    \"price\": 100.5,\r\n    \"category_id\": 2,\r\n    \"supplier_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/product/create"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:09:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"name\": \"new product\",\n    \"price\": 100.5,\n    \"category_id\": 2,\n    \"supplier_id\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "UpdateProduct",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"new new product\",\r\n    \"price\": 100.5,\r\n    \"category_id\": 2,\r\n    \"supplier_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8001/api/product/9"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:10:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"name\": \"new new product\",\n    \"price\": 100.5,\n    \"category_id\": 2,\n    \"supplier_id\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "DeleteProduct",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8001/api/product/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 May 2022 17:12:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "product has been Deleted successfully."
+				}
+			]
+		}
+	]
+}
